@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <!-- LOGO -->
+    <div class="container d-flex justify-content-center" aria-label="logo">
+      <img src="./images/logo.svg" class="img-fluid mb-5" alt="logo" aria-hidden="true">
+    </div>
+
+    <div class="row py-4 px-2 rounded-3">
+      <div class="col-12 col-md-6 rounded">
+        <!-- BILL -->
+        <section class="mb-3" aria-label="bill section">
+          <h1 class="title">Bill</h1>
+      
+          <div class="input-group position-relative">
+            <img src="./images/icon-dollar.svg" alt="dollar sign">
+            <input type="number" id="bill" class="form-control bg-light-gray" placeholder="00.00" min="0">
+          </div>
+        </section>
+
+
+        <!-- Select Tip % -->
+        <section class="tip mb-3" aria-label="select tip">
+          <h1 class="title">Select Tip %</h1>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <button class="btn tip-percent bg-dark-color text-white fw-bold" value="5">5%</button>
+            </div>
+            <div class="col-6">
+              <button class="btn tip-percent bg-dark-color text-white fw-bold" value='10'>10%</button>
+            </div>
+            <div class="col-6">
+              <button class="btn tip-percent bg-dark-color text-white fw-bold" value="15">15%</button>
+            </div>
+            <div class="col-6">
+              <button class="btn tip-percent bg-dark-color text-white fw-bold" value="25">25%</button>
+            </div>
+            <div class="col-6">
+              <button class="btn tip-percent bg-dark-color text-white fw-bold" value="30">30%</button>
+            </div>
+            <div class="col-6">
+              <input type="number" id="tip-custom" class="form-control bg-light-gray" placeholder="Custom">
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Number of People -->
+        <section class="mb-3 position-relative" aria-label="number of people">
+          <h1 class="title">Number of People</h1>
+      
+          <div class="input-group position-relative">
+            <img src="./images/icon-person.svg" alt="person sign">
+            <input type="number" id="persons" class="form-control bg-light-gray persons" placeholder="0" min="1" value="1">
+          </div>
+
+          <div class="error">Can't be zero</div>
+        </section>
+      
+      </div>
+
+      <div class="col-12 col-md-6 py-4 px-3 rounded-3 bg-dark-color position-relative">
+
+        <div class="container position-relative p-0">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="label">
+              <p class="m-0 text-cyan-2">Tip Ammount</p>
+              <p class="m-0 text-cyan-3">/ per person</p>
+            </div>
+            <div class="#">
+              <p class="amount text-cyan-1" id="tip-amount">$ 00.00</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="label">
+              <p class="m-0 text-cyan-2">Total</p>
+              <p class="m-0 text-cyan-3">/ person</p>
+            </div>
+            <div class="#">
+              <p class="amount text-cyan-1" id="total">$ 00.00</p>
+            </div>
+          </div>
+  
+          <div class="reset-btn">
+            <button class="btn bg-cyan" id="reset">reset</button>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/jonel-hatwell/" target="_blank">Jonel Hatwell</a>.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!--  
+   -->
